@@ -56,7 +56,7 @@ const App: React.FC = () => {
 	return (
 		<div>
 			<h3>test 2</h3>
-			<Webcam ref={webcam} videoConstraints={{ facingMode: { exact: "user" } }} />
+			<Webcam ref={webcam} videoConstraints={{ facingMode: { exact: "environment" } }} />
 			{labels.map((label, index) => (
 				<p key={index}>{label}</p>
 			))}
